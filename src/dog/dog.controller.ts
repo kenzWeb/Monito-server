@@ -20,11 +20,12 @@ export class DogController {
     return this.DogService.getAllDogs();
   }
 
+  
   @Post()
   async postDog(@Body() postData: Dog): Promise<Dog> {
     return this.DogService.createDog(postData);
   }
-
+  
   @Get(':id')
   async getDog(@Param('id') id: number): Promise<Dog | null> {
     return this.DogService.getDog(id);

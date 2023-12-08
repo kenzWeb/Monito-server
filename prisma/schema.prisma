@@ -26,3 +26,18 @@ model Products {
   size    String
   product String
 }
+
+model PopularDog {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model LargeDog {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model SmallDog {
+  id   Int    @id @default(autoincrement())
+  name String
+}
